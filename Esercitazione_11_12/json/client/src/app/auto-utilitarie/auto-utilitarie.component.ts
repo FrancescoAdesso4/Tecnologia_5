@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./auto-utilitarie.component.css']
 })
 export class AutoUtilitarieComponent  {
-  
+  utilitarie:AutoUtilitarie[];
+  constructor(private router:Router){
+    this.utilitarie = this.router.getCurrentNavigation().extras.state as AutoUtilitarie[];
+  }
   
 }

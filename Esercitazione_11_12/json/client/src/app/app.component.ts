@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
   AutoUt: AutoUtilitarie[]
   constructor(private http:HttpClient){}
   ngOnInit(): void{
-    this.http.get('3000-francescoad-tecnologia5-otlpn6w4uuu.ws-eu107.gitpod.io/api').subscribe(data => {
+    this.http.get('https://3000-francescoad-tecnologia5-g0a6hgnex7t.ws-eu107.gitpod.io/api').subscribe(data => {
 // Read the result field from the JSON response.
   this.AutoSp = data["Auto Sportive"];
   this.AutoUt = data["Auto utilitarie"];
