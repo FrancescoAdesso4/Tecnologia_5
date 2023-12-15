@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AutoSportiveComponent } from './auto-sportive/auto-sportive.component';
 import { AutoUtilitarieComponent } from './auto-utilitarie/auto-utilitarie.component';
+import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     AutoSportiveComponent,
-    AutoUtilitarieComponent
+    AutoUtilitarieComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule  // Aggiungi HttpClientModule agli imports
   ],
   providers: [],
   bootstrap: [AppComponent]
