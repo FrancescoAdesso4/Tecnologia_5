@@ -1,3 +1,28 @@
-<div *ngFor="let a of sportive">
-    <h4>{{a.prezzo}}</h4>
-</div>
+<h1>Esposizione di macchine sportive</h1>
+<div *ngFor="let s of sportive">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <img src= {{s.immagine}} class="card-img-top" alt="BMW M2">
+          <div class="card-body">
+            <h2 class="card-title text-center">BMW M2</h2>
+            <h3 class="card-title">Dati tecnici</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  Prezzo: {{s.prezzo}}
+                </div>
+                <div class="col">
+                  Potenza: {{s.potenza}}
+                </div>
+                <div class="col">
+                  Alimentazione: {{s.alimentazione}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
